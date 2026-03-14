@@ -12,6 +12,7 @@ class Text {
             // Проверяем, ввел ли пользователь число
             if (scanner.hasNextInt()) {
                 int a = scanner.nextInt();
+                int b = scanner.nextInt();
 
                 switch (a) {
                     case 1 -> System.out.println("Тимур лох");
