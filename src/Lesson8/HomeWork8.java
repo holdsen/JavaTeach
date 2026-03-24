@@ -28,34 +28,25 @@ public class HomeWork8 {
             mikitos.protect = scanner.nextInt();
             Therapist glavVra4 = new Therapist();
             glavVra4.prinimay(mikitos);
-            }
-        static class Doctor {
-            public void heal() {
-                System.out.println("Врач начал лечение!");
-            }
-        }
-        static class Patient {
-            public int protect;
-            Doctor doctor;
         }
     }
-
     public static class TaskTwo {
         public static void run() {
             System.out.println("Ок сложный блок ((");
             try {
                 Apple ogryzak = new Apple();
-                System.out.println("Цвет сейчас: " + ogryzak.color);
                 Field poleColor = Apple.class.getDeclaredField("color");
                 poleColor.setAccessible(true);
-                poleColor.set(ogryzak, "Зелёный \n");
-                System.out.println("Цвет теперь: " + ogryzak.color);
+                String colorBefore = (String) poleColor.get(ogryzak);
+                System.out.println("Цвет сейчас: " + colorBefore);
+                poleColor.set(ogryzak, "Зелёный");
+                String colorAfter = (String) poleColor.get(ogryzak);
+                System.out.println("Цвет теперь (после взлома): " + colorAfter);
+
             } catch (Exception e) {
-                System.out.println("Ошибка!");
+                System.out.println("Ошибка при взломе!");
+                e.printStackTrace();
             }
-        }
-        static class Apple {
-            private String color = "Чёрный";
         }
     }
 }

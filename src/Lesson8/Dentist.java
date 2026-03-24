@@ -1,12 +1,14 @@
 package Lesson8;
 
-public class Dentist extends HomeWork8.TaskOne.Doctor {
+
+
+public class Dentist extends Doctor {
     @Override
     public void heal() {
         System.out.println("Лечу зубы!");
         System.out.println("\n");
     }
-        public void prinimay(HomeWork8.TaskOne.Patient patient) {
+        public void prinimay(Patient patient) {
             if (patient.protect == 1)
                 patient.doctor = new Surgeon();
             else if (patient.protect == 2)
