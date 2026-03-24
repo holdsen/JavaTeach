@@ -1,6 +1,6 @@
 package Lesson8;
 
-public class Doctor {
+abstract class Doctor {
     public void heal() {
         System.out.println("Врач начал лечение!");
     }

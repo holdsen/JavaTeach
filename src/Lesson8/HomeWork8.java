@@ -11,7 +11,6 @@ public class HomeWork8 {
             System.out.println("2 - Блок со звездой!");
             System.out.print("Ответ: ");
             int start = scanner.nextInt();
-
             if(start == 1)
                 TaskOne.run();
             else if (start == 2)
@@ -25,7 +24,7 @@ public class HomeWork8 {
             System.out.println("Ок блок 1");
             Patient mikitos = new Patient();
             System.out.println("Напиши какой будет его план лечения (1, 2, 3??) !");
-            mikitos.protect = scanner.nextInt();
+            mikitos.setProtect(scanner.nextInt());
             Therapist glavVra4 = new Therapist();
             glavVra4.prinimay(mikitos);
         }
@@ -41,7 +40,7 @@ public class HomeWork8 {
                 System.out.println("Цвет сейчас: " + colorBefore);
                 poleColor.set(ogryzak, "Зелёный");
                 String colorAfter = (String) poleColor.get(ogryzak);
-                System.out.println("Цвет теперь (после взлома): " + colorAfter);
+                System.out.println("Цвет теперь: " + colorAfter);
 
             } catch (Exception e) {
                 System.out.println("Ошибка при взломе!");

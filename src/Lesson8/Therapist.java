@@ -10,13 +10,14 @@ public class Therapist extends Doctor {
 
 
     public void prinimay(Patient patient) {
-        if (patient.protect == 1)
-            patient.doctor = new Surgeon();
-        else if (patient.protect == 2)
-            patient.doctor = new Dentist();
+        int plan = patient.getProtect();
+        if (plan == 1)
+            patient.setDoctor(new Surgeon());
+        else if (plan == 2)
+            patient.setDoctor(new Dentist());
         else
-            patient.doctor = new Therapist();
+            patient.setDoctor(new Therapist());
 
-        patient.doctor.heal();
+        patient.getDoctor().heal();
     }
 }
