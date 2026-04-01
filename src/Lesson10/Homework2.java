@@ -1,6 +1,6 @@
 package Lesson10;
 
-class Address implements Cloneable {
+class Address  {
     String city;
     Address(String city) { this.city = city; }
 }

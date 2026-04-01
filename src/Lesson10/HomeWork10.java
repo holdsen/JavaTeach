@@ -8,7 +8,7 @@ import java.util.Objects;
  */
 
 class UserName {
-    String name;
+    private String name;
 
     UserName(String name) {
         this.name = name;
@@ -22,8 +22,8 @@ class UserName {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof User)) return false;
-        User user = (User) o;
+        if (!(o instanceof UserName)) return false;
+        UserName user = (UserName) o;
         return Objects.equals(name, user.name);
     }
 
