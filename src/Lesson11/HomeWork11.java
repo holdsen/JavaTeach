@@ -16,7 +16,7 @@ public class HomeWork11 {
             if (start == 1)
                 taskOne();
             else if (start == 2)
-                HomeWork2();
+                homeWork2();
             else
                 System.out.println("Введи доступное число!");
         }
@@ -171,7 +171,7 @@ public class HomeWork11 {
         return true;
     }
 
-    private static void HomeWork2() {
+    public static void homeWork2() {
             System.out.println("Ок задача со звёздочкой");
             scan.nextLine();
             System.out.println("Введите строку с несколькими словами:");
