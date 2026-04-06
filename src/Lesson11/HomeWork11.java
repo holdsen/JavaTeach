@@ -16,7 +16,7 @@ public class HomeWork11 {
             if (start == 1)
                 taskOne();
             else if (start == 2)
-                HomeWork2.run();
+                HomeWork2();
             else
                 System.out.println("Введи доступное число!");
         }
@@ -171,8 +171,7 @@ public class HomeWork11 {
         return true;
     }
 
-    private class HomeWork2 {
-        public static void run() {
+    private static void HomeWork2() {
             System.out.println("Ок задача со звёздочкой");
             scan.nextLine();
             System.out.println("Введите строку с несколькими словами:");
@@ -204,4 +203,4 @@ public class HomeWork11 {
             return cleanWord.equals(reversedWord);
         }
     }
-}
+
