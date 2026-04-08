@@ -3,6 +3,9 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * Сорри сделал в main но когда ты скажешь мерджить я за мерджу и удалю!
+ */
 public class HomeWork12 {
     public static Scanner scan = new Scanner(System.in);
     public static void main(String[] args) {
