@@ -12,21 +12,21 @@ public class HomeWork12 {
         homeWork1();
     }
     public static void homeWork1() {
-        while (true) {
-            System.out.println("Введи аббревиатуру!");
-            String input = scan.nextLine();
-            if (input.length() >= 2 && input.length() <= 6) {
-                boolean result = input.matches("[А-ЯA-Z]+");
-                if (result) {
-                    System.out.println("Аббривиатуры: " + input);
-                    question1();
-                } else {
-                    System.out.println("Не допустимые символы!");
-                }
-            } else {
-                System.out.println("Попробуй ещё, пиши только аббревиатуры от 2 до 6 символов!");
-            }
+        System.out.println("Напиши текст, в котором нужно найти аббревиатуры:");
+        String input = scan.nextLine();
+        String regex = "\\b[A-ZА-Я]{2,6}\\b";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(input);
+        System.out.println("Аббревиатуры:");
+        boolean found = false;
+        while (matcher.find()) {
+            System.out.println(matcher.group());
+            found = true;
         }
+        if (!found)
+            System.out.println("Аббревиатуры не найдены.");
+
+        question1();
     }
     public static void question1() {
         System.out.println("Отлично продолжаем? (Да, Не, Другое(Домашнее задание со звёздочкой))");
