@@ -5,44 +5,24 @@ import java.util.Scanner;
 
 public class Lesson2 {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        Animals animals = new Animals();
-        while (true) {
-            System.out.println("1. Добавить в начало");
-            System.out.println("2. Удалить из конца");
-            System.out.println("3. Показать всех");
-            System.out.print("Выбери действие: ");
-            String cmd = scan.nextLine();
-            if (cmd.equals("1")) animals.addAnimal();
-            else if (cmd.equals("2")) animals.killAnimal();
-            else if (cmd.equals("3")) animals.showAnimals();
-        }
-    }
-    static class Animals {
-        LinkedList<String> list = new LinkedList<>();
-        Scanner scan = new Scanner(System.in);
-        public Animals() {
-            list.add("Заяц");
-            list.add("Лев");
-            list.add("Волк");
-        }
-        public void killAnimal() {
-            if (!list.isEmpty()) {
-                String removed = list.removeLast();
-                System.out.println("✅ " + removed + " удален из КОНЦА списка.");
-            } else {
-                System.out.println("Список пуст!");
+        try (Scanner scan = new Scanner(System.in)) {
+            Animals animals = new Animals(scan);
+            boolean isRunning = true;
+            while (isRunning) {
+                System.out.println("\n1. Добавить" +
+                        " \n2. Удалить " +
+                        " \n3. Показать " + "\n0. Выход");
+                System.out.print("Выбери действие: ");
+                String cmd = scan.nextLine();
+                switch (cmd) {
+                    case "1" -> animals.addAnimal();
+                    case "2" -> animals.killAnimal();
+                    case "3" -> animals.showAnimals();
+                    case "0" -> isRunning = false;
+                    default -> System.out.println("Неверная команда");
+                }
             }
         }
-        public void addAnimal() {
-            System.out.print("Кого добавим в начало?: ");
-            String name = scan.nextLine();
-            list.addFirst(name);
-            System.out.println("✅ " + name + " добавлен в НАЧАЛО.");
-        }
-        public void showAnimals() {
-            System.out.println("Текущий список: " + list);
-        }
     }
-}
 
+}

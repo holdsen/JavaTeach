@@ -32,7 +32,6 @@ public class Lesson3 {
         }
     }
 
-    // Метод для печати имен студентов определенного курса
     public static void printStudents(List<Student> students, int course) {
         for (Student s : students) {
             if (s.getCourse() == course) {

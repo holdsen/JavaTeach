@@ -7,7 +7,7 @@ public class Lesson1 {
         while (true) {
             System.out.println("⬇Введи набор чисел⬇");
             String start = scan.nextLine();
-            if(start.matches("[\\d\\s]+")) {
+            start.matches("[\\d\\s]+");
                 HashSet<String> set = new HashSet<>();
                 String[] words = start.split("[ ,\\s]+");
                 for (String s : words) {
@@ -15,10 +15,9 @@ public class Lesson1 {
                         set.add(s);
                     }
                 }
-                System.out.println("Результат: " + set);
-            } else {
-                System.out.println("Ошибка!!: ВВедите только цифры!");
-            }
+                    System.out.println("Результат: " + set);
+            break;
         }
+        scan.close();
     }
 }
