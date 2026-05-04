@@ -17,9 +17,9 @@ import java.time.format.DateTimeParseException;
  *   - Лямбда выражения
  * @author Arsen Shaternik ★
  * @author inspector Nikita Shaternik ★
- * @version FIXED
+ * @version FIXED 2.0
  * @see java.util.Date
- * @since 29.04.2026
+ * @since 04.05.2026
  * Дата и её свойства
  * Чтобы скипнуть дз /skip
  * /skip - Работает только в первой задании, так сделано чтобы было удобно!
@@ -32,89 +32,59 @@ public class AllLesson {
     public static final String AQUA = "\u001B[36m";
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        LocalDate birthday;
-        while (true) {
-            System.out.println(PURPLE + "Введите дату своего рождения: " + RESET);
-            String happyBirthday = scan.nextLine();
-            if (happyBirthday.equalsIgnoreCase("/Skip")) {
-                Help();
-                return;
-            }
-            try {
-                birthday = LocalDate.parse(happyBirthday);
-                break;
-            } catch (DateTimeParseException e) {
-                System.out.println(RED + "Ошибка!! Только цифры! Пример: 2000-01-01" + RESET);
-            }
-        }
-        LocalDate date100 = birthday.plusYears(100);
-        System.out.println(BLUE + "Дата принята!" + RESET);
-        System.out.println(AQUA + "Дата через 100 лет: " + date100 + RESET);
-        System.out.println("\n" + "\n" + "\n");
-        LessonTwo();
+        lessonOne();
+        lessonTwo();
+        lessonThree();
+        lessonFour();
+        lessonFive();
     }
 
-    public static void LessonTwo() {
-        System.out.println(RED + "Домашнее задание #2" + RESET);
+    public static void lessonOne() {
+        System.out.println(PURPLE + "Домашнее задание #1 (Data API)" + RESET);
+        LocalDate birthday = LocalDate.of(2000, 1, 1);
+        LocalDate date100 = birthday.plusYears(100);
+        System.out.println(BLUE + "Дата рождения: " + birthday + RESET);
+        System.out.println(AQUA + "Дата через 100 лет: " + date100 + RESET);
+        System.out.println();
+    }
+
+    public static void lessonTwo() {
+        System.out.println(RED + "Домашнее задание #2 (Predicate)" + RESET);
         Predicate<Integer> predicate = n -> n >= 0;
-        int[] massive = {-2, -1, 0, 1, 2,};
+        int[] massive = {-2, -1, 0, 1, 2};
         for (int n : massive) {
             if (predicate.test(n)) {
                 System.out.println(n);
             }
         }
-        LessonThree();
+        System.out.println();
     }
 
-    public static void LessonThree() {
-        System.out.println(RED + "Домашнее задание #3" + RESET);
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Какая у тебя сумма BYN?");
-        try {
-            int balance = scan.nextInt();
-            Function<String, Double> money = s -> Double.parseDouble(s.split(" ")[0]) / 2.82;
-            System.out.println("Переведение в доллары: " + money.apply(balance + " BYN") + "$");
-            LessonFour();
-        } catch (InputMismatchException e) {
-            System.out.println("Ошибка! Пользователь ввёл строку!");
-        }
+    public static void lessonThree() {
+        System.out.println(RED + "Домашнее задание #3 (Function)" + RESET);
+        double balance = 100.0;
+        Function<String, Double> money = s -> Double.parseDouble(s.split(" ")[0]) / 2.82;
+        System.out.println("BYN: " + balance + " -> USD: " + money.apply(balance + " BYN") + "$");
+        System.out.println();
     }
 
-    public static void LessonFour() {
-        System.out.println(RED + "Домашнее задание #4" + RESET);
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Какая у тебя сумма BYN?");
-        int balance = scan.nextInt();
+    public static void lessonFour() {
+        System.out.println(RED + "Домашнее задание #4 (Consumer)" + RESET);
+        double balance = 250.0;
         Consumer<String> money = n -> {
             double result = Double.parseDouble(n.split(" ")[0]) / 2.82;
-            System.out.println("Результат: " + result + "$");
+            System.out.println("Результат конвертации: " + result + "$");
         };
         money.accept(balance + " BYN");
-        LessonFive();
+        System.out.println();
     }
 
-    public static void LessonFive() {
-        System.out.println(RED + "Домашнее задание #5" + RESET);
-        Scanner scan = new Scanner(System.in);
-        Supplier<String> text = () -> {
-            System.out.println("Введите текст");
-            String txt = scan.nextLine();
-            return new StringBuilder(txt).reverse().toString();
-        };
+    public static void lessonFive() {
+        System.out.println(RED + "Домашнее задание #5 (Supplier)" + RESET);
+        String input = "Я не стар, брат сена я";
+        Supplier<String> text = () -> new StringBuilder(input).reverse().toString();
+        System.out.println("Исходная строка: " + input);
         System.out.println("Перевёртыш: " + text.get());
-    }
-
-    public static void Help() {
-        Scanner help = new Scanner(System.in);
-        System.out.println("Окей давай сделаем чуточку быстрее");
-        System.out.println("Напиши какой ты дз хочешь увидеть(2-5)");
-        if (help.hasNextInt()) {
-            int chose = help.nextInt();
-            if (chose == 2) LessonTwo();
-            else if (chose == 3) LessonThree();
-            else if (chose == 4) LessonFour();
-            else if (chose == 5) LessonFive();
-        }
+        System.out.println();
     }
 }
