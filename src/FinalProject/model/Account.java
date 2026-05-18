@@ -2,14 +2,13 @@ package FinalProject.model;
 
 public class Account {
     private String number;
-    private int balance;
+    private double balance;
 
-    public Account(String number, int balance) {
+    public Account(String number, double balance) {
         this.number = number;
         this.balance = balance;
     }
-
     public String getNumber() { return number; }
-    public int getBalance() { return balance; }
-    public void setBalance(int balance) { this.balance = balance; }
+    public double getBalance() { return balance; }
+    public void setBalance(double balance) { this.balance = balance; }
 }

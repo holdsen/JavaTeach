@@ -8,8 +8,5 @@ public class ReportItem {
     public String message;
     public LocalDateTime dateTime = LocalDateTime.now();
 
-    public static void main(String[] args) {
-
-    }
     }
 

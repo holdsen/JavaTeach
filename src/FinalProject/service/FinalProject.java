@@ -16,16 +16,17 @@ public class FinalProject {
         String db = "D:\\JavaTeach\\src\\FinalProject\\accounts_db.txt";
         String input = "D:\\JavaTeach\\src\\FinalProject\\input\\";
         String archive = "D:\\JavaTeach\\src\\FinalProject\\archive\\";
-
         while (true) {
             System.out.println(Logger.YELLOW + "\n--- БАНКОВСКАЯ СИСТЕМА ---" + Logger.RESET);
             System.out.println("1. Запустить парсинг ");
-            System.out.println("2. Показать отчет ");
+            System.out.println("2. Показать отчет по датам ");
             System.out.println("0. Выход");
             String choice = scan.next();
             if (choice.equals("1")) {
                 try {
                     Map<String, Account> accounts = accService.loadAccounts(db);
+                    //Изменил путь так как мне сказала ии что так правильно
+                    //                                                 VVV
                     List<Transaction> trans = parser.parseInputFolder(input);
                     if (trans.isEmpty()) {
                         Logger.info("Нет новых файлов для обработки.");
@@ -47,6 +48,7 @@ public class FinalProject {
                             Logger.error(msg);
                         }
                         reportService.writeLog(t.fileName, status, msg);
+                        // Тут немного изменил потому что у меня выскакивала ошибка( и я просто поменял всё, и вроде работает)
                         new File(input + t.fileName).renameTo(new File(archive + t.fileName));
                     }
                     accService.saveAccounts(accounts, db);
@@ -54,11 +56,21 @@ public class FinalProject {
                 } catch (IOException e) {
                     Logger.error("Критическая ошибка: " + e.getMessage());
                 }
-            } else if (choice.equals("2")) {
-                reportService.printReport();
-            } else if (choice.equals("0")) {
+                continue;
+            }
+            if (choice.equals("2")) {
+                System.out.println("Введите начальную дату (ГГГГ-ММ-ДД): ");
+                String startDateStr = scan.next();
+                System.out.println("Введите конечную дату (ГГГГ-ММ-ДД): ");
+                String endDateStr = scan.next();
+
+                reportService.printReportByDates(startDateStr, endDateStr);
+                continue;
+            }
+            if (choice.equals("0")) {
                 break;
             }
+            Logger.error("Неверный пункт меню. Попробуйте еще раз.");
         }
     }
 }

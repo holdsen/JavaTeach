@@ -1,0 +1,71 @@
+sender: 48291-50382
+receiver: 19402-85731
+amount: 15700
+comment: Payment for services
+priority: medium
+
+sender: 88231-00219
+receiver: 77341-99203
+amount: 500
+comment: Dinner split
+priority: low
+
+sender: 33412-55621
+receiver: 11200-44932
+amount: 120000
+comment: Monthly rent
+priority: high
+
+sender: 88990-00112
+receiver: 44556-66778
+amount: 120000
+comment: Good job son
+priority: low
+
+sender: 99001-12233
+receiver: 12389-45670
+amount: 100
+comment: good work
+priority: low
+
+sender: 55443-32211
+receiver: 45454-56565
+amount: 500
+comment: thank the game
+priority: low
+
+sender: 60606-07070
+receiver: 78787-89898
+amount: 1500.50
+comment: Freelance payout
+priority: high
+
+sender: 74125-89630
+receiver: 22334-44556
+amount: 12500.00
+comment: Car purchase deposit
+priority: high
+
+sender: 45454-56565
+receiver: 30303-04040
+amount: 85.75
+comment: Amazon utility bill
+priority: medium
+
+sender: 99001-12233
+receiver: 33445-55667
+amount: 4300.12
+comment: Online course tuition
+priority: medium
+
+sender: 77889-90011
+receiver: 12121-23232
+amount: 99000.00
+comment: Unrealistic gift
+priority: low
+
+sender: 30303-04040
+receiver: 10293-84756
+amount: 600.00
+comment: Coffee split
+priority: low

@@ -13,13 +13,12 @@ public class AccountService {
                 if (line.trim().isEmpty()) continue;
                 String[] parts = line.split("\\|");
                 String num = parts[0].trim();
-                int bal = Integer.parseInt(parts[1].trim());
+                double bal = Double.parseDouble(parts[1].trim());
                 map.put(num, new Account(num, bal));
             }
         }
         return map;
     }
-
     public void saveAccounts(Map<String, Account> accounts, String path) throws IOException {
         try (PrintWriter pw = new PrintWriter(new FileWriter(path))) {
             for (Account akk : accounts.values()) {
