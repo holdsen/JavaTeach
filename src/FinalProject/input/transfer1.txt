@@ -58,14 +58,15 @@ amount: 4300.12
 comment: Online course tuition
 priority: medium
 
-sender: 77889-90011
-receiver: 12121-23232
-amount: 99000.00
-comment: Unrealistic gift
-priority: low
+sender: 11200-44932
+receiver: 66578-88990
+amount: 1488.67
+comment: lol
+priority: medium
 
-sender: 30303-04040
-receiver: 10293-84756
-amount: 600.00
-comment: Coffee split
-priority: low
+sender: 60606-07070
+receiver: 78787-89898
+amount: 300
+comment: bitcoin
+priority: medium
+

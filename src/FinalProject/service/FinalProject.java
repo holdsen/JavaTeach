@@ -1,9 +1,11 @@
 package FinalProject.service;
 
 import FinalProject.model.*;
+import FinalProject.resoures.DatabaseService;
 import FinalProject.util.Logger;
 import java.io.*;
 import java.util.*;
+
 
 public class FinalProject {
     public static void main(String[] args) {
@@ -11,22 +13,24 @@ public class FinalProject {
         AccountService accService = new AccountService();
         ParserService parser = new ParserService();
         ReportService reportService = new ReportService();
+        DatabaseService dbService = new DatabaseService();
 
         // Микита измени тут твой путь
         String db = "D:\\JavaTeach\\src\\FinalProject\\accounts_db.txt";
         String input = "D:\\JavaTeach\\src\\FinalProject\\input\\";
         String archive = "D:\\JavaTeach\\src\\FinalProject\\archive\\";
+
         while (true) {
             System.out.println(Logger.YELLOW + "\n--- БАНКОВСКАЯ СИСТЕМА ---" + Logger.RESET);
             System.out.println("1. Запустить парсинг ");
             System.out.println("2. Показать отчет по датам ");
             System.out.println("0. Выход");
+
             String choice = scan.next();
+
             if (choice.equals("1")) {
                 try {
                     Map<String, Account> accounts = accService.loadAccounts(db);
-                    //Изменил путь так как мне сказала ии что так правильно
-                    //                                                 VVV
                     List<Transaction> trans = parser.parseInputFolder(input);
                     if (trans.isEmpty()) {
                         Logger.info("Нет новых файлов для обработки.");
@@ -44,20 +48,21 @@ public class FinalProject {
                             Logger.success(msg);
                         } else {
                             status = "ОШИБКА";
-                            msg = "Ошибка данных или баланса в файле подробнее в info.txt " + t.fileName;
+                            msg = "Ошибка данных или баланса в файле подробнее in info.txt " + t.fileName;
                             Logger.error(msg);
                         }
                         reportService.writeLog(t.fileName, status, msg);
-                        // Тут немного изменил потому что у меня выскакивала ошибка( и я просто поменял всё, и вроде работает)
+                        dbService.saveTransaction(t, status, msg);
                         new File(input + t.fileName).renameTo(new File(archive + t.fileName));
                     }
                     accService.saveAccounts(accounts, db);
-                    Logger.info("База счетов обновлена.");
+                    Logger.info("База счетов обновлена и данные сохранены в БД.");
                 } catch (IOException e) {
                     Logger.error("Критическая ошибка: " + e.getMessage());
                 }
                 continue;
             }
+
             if (choice.equals("2")) {
                 System.out.println("Введите начальную дату (ГГГГ-ММ-ДД): ");
                 String startDateStr = scan.next();
