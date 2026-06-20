@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Проверка возраста</title>
+</head>
+<body style="text-align: center; margin-top: 50px; font-family: Arial, sans-serif;">
+
+<h2>Введите ваш возраст для проверки:</h2>
+
+<!-- Форма отправляет данные на наш сервлет /check-age -->
+<form action="check-age" method="GET">
+    <input type="number" name="age" placeholder="Введите тут" required style="padding: 8px; font-size: 16px;">
+    <button type="submit" style="padding: 8px 15px; font-size: 16px; cursor: pointer;">Проверить</button>
+</form>
+
+</body>
+</html>

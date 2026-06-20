@@ -1,0 +1,149 @@
+20-Jun-2026 15:26:04.098 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Имя версии сервера:    Apache Tomcat/9.0.118
+20-Jun-2026 15:26:04.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Сервер собран:         May 1 2026 19:30:30 UTC
+20-Jun-2026 15:26:04.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Номер версии сервера:  9.0.118.0
+20-Jun-2026 15:26:04.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+20-Jun-2026 15:26:04.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Версия ОС:             10.0
+20-Jun-2026 15:26:04.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Архитектура:           amd64
+20-Jun-2026 15:26:04.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\BellSoft\LibericaJDK-21
+20-Jun-2026 15:26:04.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Версия JVM:            21.0.10+10-LTS
+20-Jun-2026 15:26:04.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Производитель JVM:     BellSoft
+20-Jun-2026 15:26:04.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\HomeWork24\apache-tomcat-9.0.118
+20-Jun-2026 15:26:04.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\HomeWork24\apache-tomcat-9.0.118
+20-Jun-2026 15:26:04.114 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+20-Jun-2026 15:26:04.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+20-Jun-2026 15:26:04.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+20-Jun-2026 15:26:04.116 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+20-Jun-2026 15:26:04.116 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+20-Jun-2026 15:26:04.117 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+20-Jun-2026 15:26:04.117 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Jun-2026 15:26:04.117 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\HomeWork24\apache-tomcat-9.0.118\conf\logging.properties
+20-Jun-2026 15:26:04.117 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Jun-2026 15:26:04.118 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Jun-2026 15:26:04.118 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Jun-2026 15:26:04.118 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+20-Jun-2026 15:26:04.118 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+20-Jun-2026 15:26:04.119 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\HomeWork24\apache-tomcat-9.0.118
+20-Jun-2026 15:26:04.121 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\HomeWork24\apache-tomcat-9.0.118
+20-Jun-2026 15:26:04.121 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\HomeWork24\apache-tomcat-9.0.118\temp
+20-Jun-2026 15:26:04.124 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.7] using APR version [1.7.6].
+20-Jun-2026 15:26:04.124 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+20-Jun-2026 15:26:04.124 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+20-Jun-2026 15:26:04.132 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.19 27 Jan 2026]
+20-Jun-2026 15:26:04.524 INFO [main] org.apache.coyote.AbstractProtocol.init Инициализация ProtocolHandler ["http-nio-8080"]
+20-Jun-2026 15:26:04.574 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [732] milliseconds
+20-Jun-2026 15:26:04.630 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+20-Jun-2026 15:26:04.630 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.118]
+20-Jun-2026 15:26:04.650 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\HomeWork24\apache-tomcat-9.0.118\webapps\servlet-demo.war]
+20-Jun-2026 15:26:05.009 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\HomeWork24\apache-tomcat-9.0.118\webapps\servlet-demo.war] has finished in [357] ms
+20-Jun-2026 15:26:05.011 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\HomeWork24\apache-tomcat-9.0.118\webapps\docs]
+20-Jun-2026 15:26:05.050 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HomeWork24\apache-tomcat-9.0.118\webapps\docs] has finished in [39] ms
+20-Jun-2026 15:26:05.050 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\HomeWork24\apache-tomcat-9.0.118\webapps\examples]
+20-Jun-2026 15:26:05.767 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HomeWork24\apache-tomcat-9.0.118\webapps\examples] has finished in [717] ms
+20-Jun-2026 15:26:05.768 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\HomeWork24\apache-tomcat-9.0.118\webapps\host-manager]
+20-Jun-2026 15:26:05.804 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HomeWork24\apache-tomcat-9.0.118\webapps\host-manager] has finished in [35] ms
+20-Jun-2026 15:26:05.804 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\HomeWork24\apache-tomcat-9.0.118\webapps\manager]
+20-Jun-2026 15:26:05.840 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HomeWork24\apache-tomcat-9.0.118\webapps\manager] has finished in [36] ms
+20-Jun-2026 15:26:05.842 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\HomeWork24\apache-tomcat-9.0.118\webapps\ROOT]
+20-Jun-2026 15:26:05.868 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HomeWork24\apache-tomcat-9.0.118\webapps\ROOT] has finished in [26] ms
+20-Jun-2026 15:26:05.872 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Jun-2026 15:26:05.897 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1315] milliseconds
+20-Jun-2026 15:28:02.563 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Имя версии сервера:    Apache Tomcat/9.0.118
+20-Jun-2026 15:28:02.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Сервер собран:         May 1 2026 19:30:30 UTC
+20-Jun-2026 15:28:02.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Номер версии сервера:  9.0.118.0
+20-Jun-2026 15:28:02.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+20-Jun-2026 15:28:02.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Версия ОС:             10.0
+20-Jun-2026 15:28:02.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Архитектура:           amd64
+20-Jun-2026 15:28:02.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\BellSoft\LibericaJDK-21
+20-Jun-2026 15:28:02.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Версия JVM:            21.0.10+10-LTS
+20-Jun-2026 15:28:02.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Производитель JVM:     BellSoft
+20-Jun-2026 15:28:02.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\HomeWork24\apache-tomcat-9.0.118
+20-Jun-2026 15:28:02.569 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\HomeWork24\apache-tomcat-9.0.118
+20-Jun-2026 15:28:02.578 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+20-Jun-2026 15:28:02.578 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+20-Jun-2026 15:28:02.578 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+20-Jun-2026 15:28:02.578 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+20-Jun-2026 15:28:02.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+20-Jun-2026 15:28:02.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+20-Jun-2026 15:28:02.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Jun-2026 15:28:02.580 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\HomeWork24\apache-tomcat-9.0.118\conf\logging.properties
+20-Jun-2026 15:28:02.580 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Jun-2026 15:28:02.580 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Jun-2026 15:28:02.580 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Jun-2026 15:28:02.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+20-Jun-2026 15:28:02.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+20-Jun-2026 15:28:02.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\HomeWork24\apache-tomcat-9.0.118
+20-Jun-2026 15:28:02.582 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\HomeWork24\apache-tomcat-9.0.118
+20-Jun-2026 15:28:02.582 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\HomeWork24\apache-tomcat-9.0.118\temp
+20-Jun-2026 15:28:02.585 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.7] using APR version [1.7.6].
+20-Jun-2026 15:28:02.585 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+20-Jun-2026 15:28:02.587 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+20-Jun-2026 15:28:02.593 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.19 27 Jan 2026]
+20-Jun-2026 15:28:02.849 INFO [main] org.apache.coyote.AbstractProtocol.init Инициализация ProtocolHandler ["http-nio-8080"]
+20-Jun-2026 15:28:02.869 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [487] milliseconds
+20-Jun-2026 15:28:02.902 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+20-Jun-2026 15:28:02.902 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.118]
+20-Jun-2026 15:28:02.916 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\HomeWork24\apache-tomcat-9.0.118\webapps\servlet-demo.war]
+20-Jun-2026 15:28:02.931 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [D:\HomeWork24\apache-tomcat-9.0.118\webapps\servlet-demo] was found with a last modified time that did not match the associated WAR. It will be deleted.
+20-Jun-2026 15:28:03.182 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\HomeWork24\apache-tomcat-9.0.118\webapps\servlet-demo.war] has finished in [264] ms
+20-Jun-2026 15:28:03.183 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\HomeWork24\apache-tomcat-9.0.118\webapps\docs]
+20-Jun-2026 15:28:03.211 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HomeWork24\apache-tomcat-9.0.118\webapps\docs] has finished in [28] ms
+20-Jun-2026 15:28:03.211 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\HomeWork24\apache-tomcat-9.0.118\webapps\examples]
+20-Jun-2026 15:28:03.481 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HomeWork24\apache-tomcat-9.0.118\webapps\examples] has finished in [270] ms
+20-Jun-2026 15:28:03.481 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\HomeWork24\apache-tomcat-9.0.118\webapps\host-manager]
+20-Jun-2026 15:28:03.510 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HomeWork24\apache-tomcat-9.0.118\webapps\host-manager] has finished in [29] ms
+20-Jun-2026 15:28:03.511 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\HomeWork24\apache-tomcat-9.0.118\webapps\manager]
+20-Jun-2026 15:28:03.560 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HomeWork24\apache-tomcat-9.0.118\webapps\manager] has finished in [49] ms
+20-Jun-2026 15:28:03.560 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\HomeWork24\apache-tomcat-9.0.118\webapps\ROOT]
+20-Jun-2026 15:28:03.580 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HomeWork24\apache-tomcat-9.0.118\webapps\ROOT] has finished in [20] ms
+20-Jun-2026 15:28:03.584 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Jun-2026 15:28:03.606 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [735] milliseconds
+20-Jun-2026 15:30:32.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Имя версии сервера:    Apache Tomcat/9.0.118
+20-Jun-2026 15:30:32.484 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Сервер собран:         May 1 2026 19:30:30 UTC
+20-Jun-2026 15:30:32.484 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Номер версии сервера:  9.0.118.0
+20-Jun-2026 15:30:32.485 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+20-Jun-2026 15:30:32.485 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Версия ОС:             10.0
+20-Jun-2026 15:30:32.485 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Архитектура:           amd64
+20-Jun-2026 15:30:32.485 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\BellSoft\LibericaJDK-21
+20-Jun-2026 15:30:32.485 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Версия JVM:            21.0.10+10-LTS
+20-Jun-2026 15:30:32.486 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Производитель JVM:     BellSoft
+20-Jun-2026 15:30:32.486 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\HomeWork24\apache-tomcat-9.0.118
+20-Jun-2026 15:30:32.486 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\HomeWork24\apache-tomcat-9.0.118
+20-Jun-2026 15:30:32.496 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+20-Jun-2026 15:30:32.496 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+20-Jun-2026 15:30:32.496 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+20-Jun-2026 15:30:32.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+20-Jun-2026 15:30:32.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+20-Jun-2026 15:30:32.498 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+20-Jun-2026 15:30:32.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Jun-2026 15:30:32.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\HomeWork24\apache-tomcat-9.0.118\conf\logging.properties
+20-Jun-2026 15:30:32.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Jun-2026 15:30:32.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Jun-2026 15:30:32.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Jun-2026 15:30:32.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+20-Jun-2026 15:30:32.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+20-Jun-2026 15:30:32.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\HomeWork24\apache-tomcat-9.0.118
+20-Jun-2026 15:30:32.503 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\HomeWork24\apache-tomcat-9.0.118
+20-Jun-2026 15:30:32.503 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\HomeWork24\apache-tomcat-9.0.118\temp
+20-Jun-2026 15:30:32.508 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.7] using APR version [1.7.6].
+20-Jun-2026 15:30:32.508 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+20-Jun-2026 15:30:32.509 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+20-Jun-2026 15:30:32.514 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.19 27 Jan 2026]
+20-Jun-2026 15:30:32.770 INFO [main] org.apache.coyote.AbstractProtocol.init Инициализация ProtocolHandler ["http-nio-8080"]
+20-Jun-2026 15:30:32.790 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [522] milliseconds
+20-Jun-2026 15:30:32.826 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+20-Jun-2026 15:30:32.827 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.118]
+20-Jun-2026 15:30:32.898 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\HomeWork24\apache-tomcat-9.0.118\webapps\servlet-demo.war]
+20-Jun-2026 15:30:32.912 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [D:\HomeWork24\apache-tomcat-9.0.118\webapps\servlet-demo] was found with a last modified time that did not match the associated WAR. It will be deleted.
+20-Jun-2026 15:30:33.184 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\HomeWork24\apache-tomcat-9.0.118\webapps\servlet-demo.war] has finished in [283] ms
+20-Jun-2026 15:30:33.184 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\HomeWork24\apache-tomcat-9.0.118\webapps\docs]
+20-Jun-2026 15:30:33.213 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HomeWork24\apache-tomcat-9.0.118\webapps\docs] has finished in [29] ms
+20-Jun-2026 15:30:33.213 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\HomeWork24\apache-tomcat-9.0.118\webapps\examples]
+20-Jun-2026 15:30:33.495 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HomeWork24\apache-tomcat-9.0.118\webapps\examples] has finished in [282] ms
+20-Jun-2026 15:30:33.496 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\HomeWork24\apache-tomcat-9.0.118\webapps\host-manager]
+20-Jun-2026 15:30:33.524 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HomeWork24\apache-tomcat-9.0.118\webapps\host-manager] has finished in [28] ms
+20-Jun-2026 15:30:33.524 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\HomeWork24\apache-tomcat-9.0.118\webapps\manager]
+20-Jun-2026 15:30:33.548 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HomeWork24\apache-tomcat-9.0.118\webapps\manager] has finished in [24] ms
+20-Jun-2026 15:30:33.548 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\HomeWork24\apache-tomcat-9.0.118\webapps\ROOT]
+20-Jun-2026 15:30:33.575 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HomeWork24\apache-tomcat-9.0.118\webapps\ROOT] has finished in [26] ms
+20-Jun-2026 15:30:33.582 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Jun-2026 15:30:33.620 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [827] milliseconds
