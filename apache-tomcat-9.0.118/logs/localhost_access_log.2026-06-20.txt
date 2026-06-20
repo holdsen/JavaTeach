@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [20/Jun/2026:15:26:39 +0300] "GET /servlet-demo/ HTTP/1.1" 200 57
+0:0:0:0:0:0:0:1 - - [20/Jun/2026:15:27:28 +0300] "GET /servlet-demo/minsk HTTP/1.1" 200 254
+0:0:0:0:0:0:0:1 - - [20/Jun/2026:15:27:30 +0300] "GET /servlet-demo/washington HTTP/1.1" 404 804
+0:0:0:0:0:0:0:1 - - [20/Jun/2026:15:28:04 +0300] "GET /servlet-demo/ HTTP/1.1" 200 695
+0:0:0:0:0:0:0:1 - - [20/Jun/2026:15:28:07 +0300] "GET /servlet-demo/check-age?age=20 HTTP/1.1" 200 55
+0:0:0:0:0:0:0:1 - - [20/Jun/2026:15:28:09 +0300] "GET /servlet-demo/minsk HTTP/1.1" 200 254
+0:0:0:0:0:0:0:1 - - [20/Jun/2026:15:28:10 +0300] "GET /servlet-demo/washington HTTP/1.1" 404 804
+0:0:0:0:0:0:0:1 - - [20/Jun/2026:15:28:27 +0300] "GET /servlet-demo/beijing HTTP/1.1" 200 254
+0:0:0:0:0:0:0:1 - - [20/Jun/2026:15:28:29 +0300] "GET /servlet-demo/washington HTTP/1.1" 404 804
