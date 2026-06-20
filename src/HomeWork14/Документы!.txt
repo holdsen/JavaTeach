@@ -1,0 +1,9 @@
+docnum123456789
+contract9876543
+docnumABCDE1234
+contractZYX987
+docnum12345!789
+shortDoc123
+contractFull123
+justNumbers1234
+docnumWayTooLong12345

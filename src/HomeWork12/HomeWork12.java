@@ -1,0 +1,73 @@
+package HomeWork12;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * Сорри сделал в main но когда ты скажешь мерджить я за мерджу и удалю!
+ */
+public class HomeWork12 {
+    public static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+
+        System.out.println("Добро пожаловать!");
+        System.out.println("1 задание");
+        homeWork1();
+    }
+    public static void homeWork1() {
+        System.out.println("Напиши текст, в котором нужно найти аббревиатуры:");
+        String input = scan.nextLine();
+        String regex = "\\b[A-ZА-Я]{2,6}\\b";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(input);
+        System.out.println("Аббревиатуры:");
+        boolean found = false;
+        while (matcher.find()) {
+            System.out.println(matcher.group());
+            found = true;
+        }
+        if (!found)
+            System.out.println("Аббревиатуры не найдены.");
+
+        question1();
+    }
+    public static void question1() {
+        System.out.println("Отлично продолжаем? (Да, Не, Другое(Домашнее задание со звёздочкой))");
+            String answer = scan.nextLine();
+            String yes = "Да";
+            String no = "Не";
+            String other = "Другое";
+            if (answer.equalsIgnoreCase(yes)) {
+                homeWork1();
+            } else if (answer.equalsIgnoreCase(no)) {
+                System.out.println("Ну тогда бб");
+            } else if (answer.equalsIgnoreCase(other)) {
+                System.out.println("Ок!");
+                homeWork2();
+            } else {
+                System.out.println("Ну если не умеешь общаться бб!");
+            }
+    }
+    public static void homeWork2() {
+        String input = scan.nextLine();
+        String docRegex = "\\b\\d{4}-\\d{4}-\\d{2}\\b";
+        String phoneRegex = "\\+\\(\\d{2}\\)\\d{7}";
+        String emailRegex = "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}";
+        System.out.println("Результаты поиска");
+        findAndPrint(input, docRegex, "document number");
+        findAndPrint(input, emailRegex, "email");
+        findAndPrint(input, phoneRegex, "phone number");
+    }
+    private static void findAndPrint(String text, String regex, String label) {
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(text);
+        boolean found = false;
+        while (matcher.find()) {
+            System.out.println(label + ": " + matcher.group());
+            found = true;
+        }
+        if (!found) {
+            System.out.println(label + ": Данные не найдены");
+        }
+    }
+}
